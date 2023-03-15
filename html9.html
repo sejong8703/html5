@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>회원가입</title>
+		<h1>회원가입</h1>
+		<body>
+		<hr>
+			<form action="join.jsp" method="post">
+				<fieldset id="set1">
+				<legend><span style="color:red">필수입력</span></legend>
+				<label for="id">아&nbsp;이&nbsp;디&nbsp; : </label>
+				<input type="text" name="id" id="id" autofocus required><br><br>
+				<!-- <input type="text" name="id2" id="id2" placeholder="아이디를 입력하세요"><br><br> -->
+
+				<label for="pw">비밀번호 : </label>
+				<input type="password" name="pw" id="pw" required><br><br>
+				
+				<label for="name">이&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;름&nbsp;  : </label>
+				<input type="text" name="name" id="name" required><br><br>
+			
+				<label for="phone">전화번호 : </label>
+				<input type="tel" name="phone" id="phone" required><br><br>
+
+				<label for="email">이&nbsp;메&nbsp;일&nbsp;  : </label>
+				<input type="email" name="email" id="email" required><br><br>
+
+				
+			
+				<label>성별 : </label><br>
+				<laberl for="ml1:">남</label>
+				<input type="radio" name="ml" id="ml1"><br>
+				<laberl for="ml2:">여</label>
+				<input type="radio" name="ml" id="ml2" checked><br>
+
+				</fieldset>
+				<fieldset id="set2">
+				<legend><span style="color:red">선택입력</span></legend>
+	
+				<laberl for="birth">생년월일 : </label>
+				<input type="date" name="birth" id="birth"><br><br>
+				
+				
+				<label>전화번호 : </label>
+				<input type="tel" name="phone" id="phone"><br><br>
+				
+				<label for="city">지&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;역 : </label>
+				<select name="city" id"city">
+					<option value="0">선택안함</option>
+					<option value="a">고양</option>
+					<option value="b">삼송</option>
+					<option value="c">원흥</option>
+				</select><br><br>
+
+				<label for="memo">하고 싶은 말 : </label><br>
+				<textarea name="memo" id="memo" row="10" cols="50"></textarea><br>
+				</fieldset>
+				<br><hr><br>
+				<div>
+					<input type="submit" value="회원가입">&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="reset" value="초기화">
+
+					
+				</div>
+			</form>
+				
+		</body>
+
+	</head>
+
+
+</html>
